@@ -1,0 +1,99 @@
+.footer {
+  background: #2f2625;
+  color: white;
+}
+
+.footer-container {
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1fr
+    1fr;
+
+  gap: 50px;
+
+  padding: 65px 0;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 26px;
+  font-weight: 700;
+
+  span {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #b76e79;
+
+    font-size: 20px;
+  }
+}
+
+.footer-brand p {
+  max-width: 250px;
+
+  color: #bdb1ae;
+
+  line-height: 1.6;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  h4 {
+    margin: 0 0 8px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 14px;
+  }
+
+  a,
+  span {
+    color: #bdb1ae;
+
+    font-size: 13px;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.footer-bottom {
+  padding: 20px 0;
+
+  border-top: 1px solid #473c3a;
+
+  color: #8e817e;
+
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}

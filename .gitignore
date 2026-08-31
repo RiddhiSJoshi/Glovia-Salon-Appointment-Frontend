@@ -6,10 +6,21 @@
 .pnp.js
 
 # testing
+.pytest_cache/
 /coverage
+htmlcov/
 
 # production
 /build
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
 
 # misc
 .DS_Store

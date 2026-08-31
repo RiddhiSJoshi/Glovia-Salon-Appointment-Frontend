@@ -1,0 +1,200 @@
+.categories-section {
+  background: white;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.category-card {
+  padding: 30px 24px;
+
+  border: 1px solid #eee3e0;
+  border-radius: 16px;
+
+  text-align: center;
+
+  background: #fffaf8;
+
+  transition: all 0.25s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+
+    border-color: #dcb9bb;
+
+    box-shadow: 0 15px 30px rgba(70, 45, 42, 0.08);
+  }
+
+  h3 {
+    margin: 15px 0 8px;
+
+    font-size: 21px;
+  }
+
+  p {
+    margin: 0;
+
+    color: #807571;
+
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+.category-icon {
+  width: 60px;
+  height: 60px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f6e5e5;
+
+  color: #b76e79;
+
+  font-size: 25px;
+}
+
+.salons-section {
+  background: #fffaf8;
+}
+
+.salon-search {
+  width: min(600px, 100%);
+
+  margin: 0 auto 45px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 18px;
+
+  border: 1px solid #e4d8d4;
+  border-radius: 12px;
+
+  background: white;
+
+  span {
+    color: #b76e79;
+    font-size: 23px;
+  }
+
+  input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 14px;
+
+    &::placeholder {
+      color: #a99e9a;
+    }
+  }
+}
+
+.salons-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.empty-state {
+  padding: 60px 20px;
+
+  text-align: center;
+
+  border: 1px dashed #d9c9c5;
+  border-radius: 15px;
+
+  background: white;
+
+  div {
+    font-size: 40px;
+    color: #b76e79;
+  }
+
+  h3 {
+    margin: 10px 0;
+  }
+
+  p {
+    color: #847974;
+  }
+}
+
+.cta-section {
+  padding: 80px 0;
+
+  background: #332928;
+
+  color: white;
+}
+
+.cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  .section-label {
+    color: #e6aeb4;
+  }
+
+  h2 {
+    max-width: 600px;
+
+    margin: 10px 0;
+
+    font-size: clamp(35px, 5vw, 52px);
+  }
+
+  p {
+    max-width: 600px;
+
+    color: #cbbebb;
+
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 900px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .salons-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .categories-grid,
+  .salons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 65px 0;
+  }
+}
