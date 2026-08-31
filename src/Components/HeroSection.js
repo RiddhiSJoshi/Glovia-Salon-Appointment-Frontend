@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "./HeroSection.scss";
+import HeroImage from "../Images/Home.png";
 
 function HeroSection() {
   return (
@@ -9,6 +10,8 @@ function HeroSection() {
       <div className="hero-background-shape shape-two"></div>
 
       <div className="container hero-container">
+
+        {/* Hero Content */}
         <div className="hero-content">
           <span className="hero-label">
             BEAUTY & WELLNESS, SIMPLIFIED
@@ -59,14 +62,16 @@ function HeroSection() {
           </div>
         </div>
 
+        {/* Single Hero Image */}
         <div className="hero-visual">
-          <div className="hero-card main-card">
-            <div className="beauty-placeholder">
-              <span>✦</span>
-              <p>Beauty begins here</p>
-            </div>
+          <div className="hero-image">
+            <img
+              src={HeroImage}
+              alt="Glōvia salon experience"
+            />
           </div>
 
+          {/* Floating Booking Card
           <div className="floating-card booking-card">
             <div className="floating-icon">✓</div>
 
@@ -74,14 +79,16 @@ function HeroSection() {
               <strong>Appointment booked</strong>
               <span>Today · 4:30 PM</span>
             </div>
-          </div>
+          </div> */}
 
+          {/* Floating Rating Card */}
           <div className="floating-card rating-card">
             <strong>4.9</strong>
             <span>★★★★★</span>
             <small>Salon rating</small>
           </div>
         </div>
+
       </div>
     </section>
   );

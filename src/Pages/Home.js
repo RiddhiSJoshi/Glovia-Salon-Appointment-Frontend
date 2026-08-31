@@ -3,6 +3,7 @@ import { useState } from "react";
 import HeroSection from "../Components/HeroSection";
 import SalonCard from "../Components/SalonCard";
 
+
 import { categories, salons } from "../Data/mockData";
 
 import "./Home.scss";
@@ -39,6 +40,7 @@ function Home() {
               trusted salons near you.
             </p>
           </div>
+          
 
           <div className="categories-grid">
             {categories.map((category) => (
